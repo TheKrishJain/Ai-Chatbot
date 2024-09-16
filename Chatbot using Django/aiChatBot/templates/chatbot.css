@@ -1,0 +1,69 @@
+#chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #cd1500;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Style for the chatbot overlay */
+#chatbot-overlay {
+    display: none;
+    position: fixed;
+    bottom: 80px; /* Adjust distance from the bottom */
+    right: 20px; /* Adjust distance from the right */
+    width: 300px; /* Adjust width */
+    height: 400px; /* Adjust height */
+    background: rgba(40, 40, 40, 0.9); /* Darker background for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #cd1500; /* Optional border for better visibility */
+    color: white;
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#chatbot-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-log {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#chat-input-container {
+    display: flex;
+    padding: 10px;
+    background: #333;
+ 
+}
+
+#chat-input {
+    flex: 1;
+    padding: 5px;
+    
+}
+
+#send-button {
+    background-color: #cd1500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

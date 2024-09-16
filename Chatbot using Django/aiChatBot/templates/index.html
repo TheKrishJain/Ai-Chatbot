@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Chatbot</title>
+    
+    <script src="https://kit.fontawesome.com/79203f6364.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'chatbot.css' %}">
+   
+</head>
+<body>
+  
+    <button id="chatbot-button">  <i class="fa-solid fa-comment-dots"></i></button>
+    <div id="chatbot-overlay">
+        <div id="chatbot-content">
+            <div id="chat-log"></div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Ask something..." />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'chatbot.js' %}"></script>
+</body>
+</html>
